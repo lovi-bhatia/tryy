@@ -42,3 +42,24 @@ if ($('.typed').length) {
         backDelay: 2000
     });
 }
+
+// Confetti
+
+var confettiSettings = { target: 'my-canvas' };
+var confetti = new ConfettiGenerator(confettiSettings);
+        const startit = () => {
+    setTimeout(function () {
+      console.log("start");
+      confetti.render();
+    }, 1000);
+  };
+
+  const stopit = () => {
+    setTimeout(function () {
+      console.log("stop");
+      confetti.clear();
+    }, 6000);
+  };
+
+  startit();
+  stopit();
