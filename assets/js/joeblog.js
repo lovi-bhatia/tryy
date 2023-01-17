@@ -51,6 +51,7 @@ var confetti = new ConfettiGenerator(confettiSettings);
     setTimeout(function () {
       console.log("start");
       confetti.render();
+
     }, 50);
   };
 
