@@ -48,11 +48,11 @@ if ($('.typed').length) {
 
 var canvas3Settings = {
     target: 'my-canvas',
-    max: 180,
+    max: 100,
     animate: true,
     props: ['circle',"square","triangle","line"],
     colors: [[165,104,246],[230,61,135],[0,199,228],[253,214,126]],
-    clock: 14
+    clock: 15
   };
   var canvas = new ConfettiGenerator(canvas3Settings);
 
