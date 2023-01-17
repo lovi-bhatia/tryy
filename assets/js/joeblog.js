@@ -45,12 +45,22 @@ if ($('.typed').length) {
 
 // Confetti
 
+
+var canvas3Settings = {
+    target: 'my-canvas',
+    max: 180,
+    animate: true,
+    props: ['circle',"square","triangle","line"],
+    colors: [[165,104,246],[230,61,135],[0,199,228],[253,214,126]],
+    clock: 14
+  };
+  var canvas = new ConfettiGenerator(canvas3Settings);
+
 var confettiSettings = { target: 'my-canvas' };
-var confetti = new ConfettiGenerator(confettiSettings);
         const startit = () => {
     setTimeout(function () {
       console.log("start");
-      confetti.render();
+      canvas.render();
 
     }, 50);
   };
@@ -58,7 +68,7 @@ var confetti = new ConfettiGenerator(confettiSettings);
   const stopit = () => {
     setTimeout(function () {
       console.log("stop");
-      confetti.clear();
+      canvas.clear();
     }, 6000);
   };
 
